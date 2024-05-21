@@ -27,6 +27,8 @@ ghb_deps = [
   cc.find_library('handbrake', dirs: hb_dir / 'libhb'),
   dependency('dvdnav'),
   dependency('dvdread'),
+  dependency('libdvdcss'),
+  dependency('libudfread'),
   dependency('SvtAv1Enc'),
   dependency('glib-2.0', version: glib_min),
   dependency('gio-2.0', version: glib_min),
