@@ -315,7 +315,7 @@ namespace HandBrakeWPF.Services
             // Video
             GpuInfo info = SystemInfo.GetGPUInfo.FirstOrDefault(s => s.IsIntel);
             bool intelDefaultSetting = (info != null && info.IsIntelDriverSupported);
-            info = SystemInfo.GetGPUInfo.FirstOrDefault(s => s.IsIntel);
+            info = SystemInfo.GetGPUInfo.FirstOrDefault(s => s.IsNvidia);
             bool nvidiaDefaultSetting = (info != null  && info.IsNvidiaDriverSupported);
 
             defaults.Add(UserSettingConstants.EnableQuickSyncEncoding, intelDefaultSetting);
@@ -337,6 +337,7 @@ namespace HandBrakeWPF.Services
             defaults.Add(UserSettingConstants.PauseQueueOnLowDiskspaceLevel, 2000000000L);
             defaults.Add(UserSettingConstants.PreviewScanCount, 10);
             defaults.Add(UserSettingConstants.MinScanDuration, 10);
+            defaults.Add(UserSettingConstants.KeepDuplicateTitles, false);
             defaults.Add(UserSettingConstants.ProcessPriorityInt, 2);
             defaults.Add(UserSettingConstants.X264Step, 0.5);
             defaults.Add(UserSettingConstants.SaveLogToCopyDirectory, false);
