@@ -10,6 +10,17 @@ Download available from Microsoft:
 - [For x64 (AMD or Intel CPUs)](https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-x64.exe)
 - [For Arm64 (Qualcomm or other)](https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-arm64.exe)
 
+## HandBrake 1.10.0
+
+#### General
+
+### Windows
+
+- Added a new preference "Default Range Mode for titles". See Preferences -> Advanced (#6385)
+- Added a new preference to run a custom action when the queue completes. See Preferences -> When Done (#4851)
+- Updated Auto Naming Preferences to add "{angle}" as a filename generation option. (#6086)
+
+
 
 ## HandBrake 1.9.0
 
